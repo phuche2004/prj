@@ -80,7 +80,7 @@ public class LoginServlet extends HttpServlet {
         User user = userDAO.getUserByUsername(username);
 
         if (user != null && user.getPassword().equals(password)) {
-            req.getSession().setAttribute("user", user);
+            req.getSession().setAttribute("user1", user);
             resp.sendRedirect("movies");
         } else {
             resp.sendRedirect("login.jsp?error=1");
