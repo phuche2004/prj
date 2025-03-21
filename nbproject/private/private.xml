@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/PhucHe/Documents/NetBeansProjects/MenuOrder/web/WEB-INF/views/menu.jsp</file>
+            <file>file:/C:/Users/PhucHe/Documents/NetBeansProjects/MenuOrder/web/index.jsp</file>
+            <file>file:/C:/Users/PhucHe/Documents/NetBeansProjects/MenuOrder/web/WEB-INF/views/error.jsp</file>
+            <file>file:/C:/Users/PhucHe/Documents/NetBeansProjects/MenuOrder/src/java/servlet/MenuServlet.java</file>
+            <file>file:/C:/Users/PhucHe/Documents/NetBeansProjects/MenuOrder/src/java/servlet/AdminLoginServlet.java</file>
+            <file>file:/C:/Users/PhucHe/Documents/NetBeansProjects/MenuOrder/src/java/dao/AdminDAO.java</file>
+            <file>file:/C:/Users/PhucHe/Documents/NetBeansProjects/MenuOrder/src/java/dao/MenuItemDAO.java</file>
+            <file>file:/C:/Users/PhucHe/Documents/NetBeansProjects/MenuOrder/src/java/dao/OrderDAO.java</file>
+            <file>file:/C:/Users/PhucHe/Documents/NetBeansProjects/MenuOrder/src/java/servlet/AdminOdersServlet.java</file>
+            <file>file:/C:/Users/PhucHe/Documents/NetBeansProjects/MenuOrder/src/java/model/Table.java</file>
+            <file>file:/C:/Users/PhucHe/Documents/NetBeansProjects/MenuOrder/src/java/dao/TableDAO.java</file>
+            <file>file:/C:/Users/PhucHe/Documents/NetBeansProjects/MenuOrder/web/WEB-INF/views/admin/orders.jsp</file>
+        </group>
+    </open-files>
+</project-private>
