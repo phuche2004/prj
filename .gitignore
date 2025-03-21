@@ -1,0 +1,26 @@
+# Ignore JSP and XML files
+*.jsp
+*.xml
+
+# Ignore servlet files/directory
+src/main/java/servlet/
+**/servlet/
+**/servlet/*.java
+
+# Common build and IDE files to ignore
+target/
+bin/
+build/
+.gradle/
+*.class
+*.war
+*.ear
+.settings/
+.project
+.classpath
+.idea/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+Thumbs.db
