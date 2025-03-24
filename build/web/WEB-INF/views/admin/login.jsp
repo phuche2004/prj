@@ -67,6 +67,18 @@
         .back-link a:hover {
             text-decoration: underline;
         }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('<%= request.getContextPath() %>/images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
     </style>
 </head>
 <body>

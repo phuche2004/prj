@@ -4,6 +4,18 @@
 <head>
     <title>Error - Restaurant Ordering System</title>
     <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('<%= request.getContextPath() %>/images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
