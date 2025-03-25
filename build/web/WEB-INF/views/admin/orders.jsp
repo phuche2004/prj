@@ -174,6 +174,10 @@
             cursor: pointer;
             font-weight: bold;
         }
+        .btn-delete{
+            background-color:#d9534f;
+            color:#dff0d8;
+        }
         .btn-preparing {
             background-color: #d9edf7;
             color: #31708f;
@@ -349,6 +353,8 @@
                         <div class="order-info">
                             <span>Order #<%= order.getOrderId() %></span>
                             <span>Table #<%= order.getTableId() %></span>
+                            <div>Customer <%= session.getAttribute("customerName") %>!</div>
+                            <div>Phone: <%= session.getAttribute("phoneNumber") %></div>
                             <span>Time: <%= dateFormat.format(order.getOrderDateTime()) %></span>
                         </div>
                         <div class="order-status status-<%= order.getStatus().toLowerCase() %>">
@@ -376,6 +382,10 @@
                     </div>
                     
                     <div class="order-actions">
+                        <form action="${pageContext.request.contextPath}/admin/delete" method="post">
+                            <input type="hidden" name="orderId" value="<%= order.getOrderId() %>">
+                            <button type="submit" class="btn btn-delete">Delete Order</button>
+                        </form>
                         <% if ("Pending".equals(order.getStatus())) { %>
                             <form action="${pageContext.request.contextPath}/admin/orders" method="post">
                                 <input type="hidden" name="orderId" value="<%= order.getOrderId() %>">
@@ -446,6 +456,10 @@
                         </div>
                         
                         <div class="order-actions">
+                            <form action="${pageContext.request.contextPath}/admin/delete" method="post">
+                                <input type="hidden" name="orderId" value="<%= order.getOrderId() %>">
+                                <button type="submit" class="btn btn-delete">Delete Order</button>
+                            </form>
                             <% if ("Pending".equals(order.getStatus())) { %>
                                 <form action="${pageContext.request.contextPath}/admin/orders" method="post">
                                     <input type="hidden" name="orderId" value="<%= order.getOrderId() %>">

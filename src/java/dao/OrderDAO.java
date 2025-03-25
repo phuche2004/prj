@@ -145,6 +145,26 @@ public class OrderDAO {
         }
     }
     
+    public void deleteOrder(int orderId) throws SQLException{
+        String query1 = "DELETE from OrderItems WHERE OrderID = ?";
+        
+        try (Connection conn = DatabaseConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(query1)) {
+            
+            stmt.setInt(1, orderId);
+            stmt.executeUpdate();
+        }
+        
+        String query2 = "DELETE from Orders WHERE OrderID = ?";
+        
+        try (Connection conn = DatabaseConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(query2)) {
+            
+            stmt.setInt(1, orderId);
+            stmt.executeUpdate();
+        }
+    }
+    
     // Get active order for a table
     public Order getActiveOrderByTableId(int tableId) throws SQLException {
         String query = "SELECT OrderID, TableID, OrderDateTime, Status, TotalAmount " +

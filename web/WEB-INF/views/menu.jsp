@@ -25,8 +25,47 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                background-color: rgba(255, 255, 255, 0.9);
+                padding: 15px 25px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 margin-bottom: 20px;
             }
+
+            .header h1 {
+                font-size: 32px;
+                font-weight: bold;
+                color: #fff;
+                background-color: #4CAF50;
+                padding: 10px 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                display: inline-block;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                text-shadow: 0 0 10px rgba(76, 175, 80, 0.8);
+            }
+
+            .header div {
+                font-size: 16px;
+                color: #555;
+                margin-left: 15px;
+            }
+
+            .header div:first-child {
+                font-weight: bold;
+            }
+
+            @media (max-width: 768px) {
+                .header {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .header div {
+                    margin: 5px 0;
+                }
+}
             h1, h2, h3 {
                 color: #333;
             }
@@ -121,6 +160,17 @@
                 margin-top: 10px;
                 font-size: 18px;
             }
+            .logout {
+                text-align: right;
+                margin-top: 20px;
+            }
+            .logout a {
+                color: #4CAF50;
+                text-decoration: none;
+            }
+            .logout a:hover {
+                text-decoration: underline;
+            }
             .tabs {
                 display: flex;
                 margin-bottom: 20px;
@@ -180,7 +230,9 @@
         <div class="container">
             <div class="header">
                 <h1>Restaurant Menu</h1>
-                <div>Table #<%= session.getAttribute("tableId")%></div>
+                <div>Welcome, <%= session.getAttribute("customerName") %>!</div>
+                <div>Phone: <%= session.getAttribute("phoneNumber") %></div>
+                <div>Table Number: <%= session.getAttribute("tableId") %></div>
             </div>
 
             <% if (session.getAttribute("message") != null) {%>
@@ -212,6 +264,7 @@
                 <div class="order-total">
                     Total: $<%= String.format("%.2f", activeOrder.getTotalAmount())%>
                 </div>
+                
             </div>
             <% } %>
 
@@ -261,6 +314,9 @@
                 </div>
             </div>
             <% }%>
+            <div class="logout">
+                <a href="${pageContext.request.contextPath}/login">Exit</a>
+            </div>
         </div>
     </body>
 </html>

@@ -193,4 +193,23 @@ public class MenuItemDAO {
         
         return str.substring(0, maxLength - 3) + "...";
     }
+    
+    public boolean validateAdmin(String username, String password) throws SQLException {
+        String query = "SELECT COUNT(*) FROM AdminUser WHERE Username = ? AND Password = ?";
+        
+        try (Connection conn = DatabaseConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(query)) {
+            
+            stmt.setString(1, username);
+            stmt.setString(2, password);
+            
+            try (ResultSet rs = stmt.executeQuery()) {
+                if (rs.next()) {
+                    return rs.getInt(1) > 0;
+                }
+            }
+        }
+        
+        return false;
+    }
 }

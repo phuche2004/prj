@@ -1,4 +1,3 @@
-<%-- /WEB-INF/views/login.jsp --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -71,12 +70,6 @@
         .btn-login:hover {
             background-color: #45a049;
         }
-        .btn-login span {
-            display: block;
-            font-size: 12px;
-            font-weight: normal;
-            opacity: 0.8;
-        }
         .btn-admin {
             width: 93%;
             background-color: #007BFF;
@@ -115,8 +108,16 @@
                 <label for="tableNumber">Table Number:</label>
                 <input type="text" id="tableNumber" name="tableNumber" placeholder="Enter your table number (1-8)" required>
             </div>
+            <div class="form-group">
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" name="customerName" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="customerPhone">Phone Number:</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+            </div>
             <button type="submit" class="btn-login">
-                Enter your table number to access the menu.
+                Choose your table and enter your information to access the menu.
             </button>
         </form>
 

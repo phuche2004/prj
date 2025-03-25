@@ -11,6 +11,7 @@
             <file>file:/C:/Users/ACER/Documents/Study/FPT/PRJ/Assignment_MenuOrder/web/WEB-INF/views/menu.jsp</file>
             <file>file:/C:/Users/ACER/Documents/Study/FPT/PRJ/Assignment_MenuOrder/web/images/logo.png</file>
             <file>file:/C:/Users/ACER/Documents/Study/FPT/PRJ/Assignment_MenuOrder/web/images/background.jpg</file>
+            <file>file:/C:/Users/ACER/Documents/Study/FPT/PRJ/Assignment_MenuOrder/src/java/dao/TableDAO.java</file>
             <file>file:/C:/Users/ACER/Documents/Study/FPT/PRJ/Assignment_MenuOrder/src/java/servlet/LoginServlet.java</file>
             <file>file:/C:/Users/ACER/Documents/Study/FPT/PRJ/Assignment_MenuOrder/src/java/dao/OrderDAO.java</file>
             <file>file:/C:/Users/ACER/Documents/Study/FPT/PRJ/Assignment_MenuOrder/src/java/servlet/AdminOdersServlet.java</file>
@@ -22,6 +23,7 @@
             <file>file:/C:/Users/ACER/Documents/Study/FPT/PRJ/Assignment_MenuOrder/web/WEB-INF/views/admin/orders.jsp</file>
             <file>file:/C:/Users/ACER/Documents/Study/FPT/PRJ/Assignment_MenuOrder/src/java/model/MenuCategory.java</file>
             <file>file:/C:/Users/ACER/Documents/Study/FPT/PRJ/Assignment_MenuOrder/src/java/model/OrderItem.java</file>
+            <file>file:/C:/Users/ACER/Documents/Study/FPT/PRJ/Assignment_MenuOrder/src/java/servlet/OrderDeleteServlet.java</file>
             <file>file:/C:/Users/ACER/Documents/Study/FPT/PRJ/Assignment_MenuOrder/web/WEB-INF/web.xml</file>
             <file>file:/C:/Users/ACER/Documents/Study/FPT/PRJ/Assignment_MenuOrder/src/java/model/Order.java</file>
             <file>file:/C:/Users/ACER/Documents/Study/FPT/PRJ/Assignment_MenuOrder/src/java/model/Table.java</file>
